@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Layout</title>
+    <style>
+        body {
+            background-color: #2a2a2a;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        .section-title {
+            border-bottom: 1px solid white;
+            margin-top: 40px;
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        td {
+            padding: 10px 0;
+            border-bottom: 1px solid #444;
+        }
+
+        .right-align {
+            text-align: right;
+        }
+
+        .subtotal, .total {
+            font-weight: bold;
+        }
+
+        .total {
+            font-size: 1.2em;
+            border-top: 2px solid white;
+            margin-top: 20px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="section-title">Category One in USD</div>
+    <table>
+        <tr><td>Expense One</td><td class="right-align">$282.00</td></tr>
+        <tr><td>Expense Two</td><td class="right-align">$72.91</td></tr>
+        <tr><td>Expense Three</td><td class="right-align">$23.93</td></tr>
+        <tr><td>Expense Four</td><td class="right-align">$291.67</td></tr>
+        <tr class="subtotal"><td>Subtotal</td><td class="right-align">$670.51</td></tr>
+    </table>
+
+    <div class="section-title">Category Two in USD</div>
+    <table>
+        <tr><td>Expense One</td><td class="right-align">$561.54</td></tr>
+        <tr><td>&emsp;&emsp;Sub Expense</td><td class="right-align">$30.00</td></tr>
+        <tr><td>Expense Two</td><td class="right-align">$720.59</td></tr>
+        <tr><td>Expense Three</td><td class="right-align">$457.10</td></tr>
+        <tr><td>Expense Four</td><td class="right-align">$139.43</td></tr>
+        <tr><td>Expense Five</td><td class="right-align">$302.07</td></tr>
+        <tr><td>&emsp;&emsp;Sub Expense</td><td class="right-align">+$66.66</td></tr>
+        <tr><td>Expense Six</td><td class="right-align">$392.40</td></tr>
+        <tr class="subtotal"><td>Subtotal</td><td class="right-align">$2536.97</td></tr>
+    </table>
+
+    <div class="section-title">Category Three in USD</div>
+    <table>
+        <tr><td>Expense One</td><td class="right-align">$126.79</td></tr>
+        <tr><td>Expense Two</td><td class="right-align">$155.17</td></tr>
+        <tr><td>Expense Three</td><td class="right-align">$36.98</td></tr>
+        <tr class="subtotal"><td>Subtotal</td><td class="right-align">$318.94</td></tr>
+    </table>
+
+    <div class="section-title">Total in USD</div>
+    <table>
+        <tr class="subtotal"><td>Category One</td><td class="right-align">$670.51</td></tr>
+        <tr class="subtotal"><td>Category Two</td><td class="right-align">$2536.97</td></tr>
+        <tr class="subtotal"><td>Category Three</td><td class="right-align">$318.94</td></tr>
+        <tr class="total"><td>Grand Total</td><td class="right-align">$3526.42</td></tr>
+    </table>
+</body>
+
+</html>
